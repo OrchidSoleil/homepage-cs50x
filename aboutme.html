@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>me-UKRAINE of MINE</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script>
+          function appear(fauna) {
+
+            pet = document.getElementById(fauna);
+            if (pet.style['visibility'] != 'visible')
+            {
+              pet.style.visibility='visible';
+              document.getElementById('chest_closed').style.display='none';
+              document.querySelector('#chest_open').style.display='inline';
+            }
+            else
+            {
+              pet.style.visibility='hidden';
+              document.getElementById('chest_closed').style.display='inline';
+              document.querySelector('#chest_open').style.display='none';
+            }
+
+          }
+        </script>
+    </head>
+    <body>
+<!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">UKRAINE of MINE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/music.html">music</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/gallery.html">art</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cuisine.html">cuisine</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+<!--HEADER--><center>
+        <h1>ABOUT ME</h1>
+<!--CONTAINER-->
+<div class="container-sm">
+<!--ACCORDION-->
+<p>According to my assignment I must add JavaScript somewhere on my page, but Bootstrap is so powerful I really didn't have a chance to.
+  So, do you see a chest right there? Do you wanna see what is kept inside? Push the button.</p>
+  <!--<img src="img/butterflies.gif" id="butterflies" style="display:none" alt="Butterfly gif"/>-->
+  <div class="butterflies">
+  <img src="img/butterflies.gif" id="butterflies" style="visibility:hidden" alt="Butterfly gif"/>
+  <img src="img/chest_closed1_sm.jpg" id="chest_closed"alt="chest closed"/>
+  <img src="img/chest_open1_sm.jpg" id="chest_open"style="display:none" alt="..."/></div>
+  <button onclick="appear('butterflies');">Push the button</button>
+<!--END ACCORDION-->
+</div>
+<!--END CONTAINER-->
+</div>
+
+<footer>Want to learn more about Ukraine? Visit <a href="https://u24.gov.ua/">UNITED24</a></footer>
+
+</center>
+    </body>
+</html>
